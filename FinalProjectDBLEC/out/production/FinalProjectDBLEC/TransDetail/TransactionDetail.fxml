@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.08542713567839195, 0.8743718592964824" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <MenuBar layoutX="-52.0" layoutY="5.0" prefHeight="31.333333333333332" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TableView layoutX="249.0" layoutY="100.0" prefHeight="159.33333333333334" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="TransactionIDcolumn" prefWidth="92.66665661334991" text="Transaction ID" />
+                <TableColumn fx:id="DetailID" prefWidth="86.66665649414062" text="Detail ID" />
+                  <TableColumn prefWidth="404.6666564941406" text="Product">
+                     <columns>
+                        <TableColumn fx:id="ItemIDcolumn" prefWidth="33.33331298828125" text="ID" />
+                        <TableColumn fx:id="ItemNameColumn" prefWidth="100.0" text="Name" />
+                        <TableColumn fx:id="ItemBrandColumn" prefWidth="100.0" text="Brand" />
+                        <TableColumn fx:id="QuantityColumn" prefWidth="100.0" text="Quantity" />
+                        <TableColumn fx:id="PriceColumn" prefWidth="100.0" text="Price" />
+                     </columns>
+                  </TableColumn>
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Button fx:id="BackButton" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="60.0" text="back" />
+            <Button fx:id="DeleteButton" layoutX="524.0" layoutY="11.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="delete " />
+         </children>
+      </AnchorPane>
+  </items>
+</SplitPane>

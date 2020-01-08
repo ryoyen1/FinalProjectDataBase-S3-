@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Stock.StockController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="617.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Page">
+            <items>
+              <MenuItem mnemonicParsing="false" text="main menu" />
+                  <MenuItem mnemonicParsing="false" text="employee" />
+                  <MenuItem mnemonicParsing="false" text="transaction" />
+                  <MenuItem mnemonicParsing="false" text="Logout" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="stocktable" layoutX="3.0" layoutY="73.0" prefHeight="323.0" prefWidth="610.0">
+        <columns>
+          <TableColumn fx:id="Stockid" prefWidth="47.333311557769775" text="ID" />
+          <TableColumn fx:id="NameColumn" prefWidth="169.33327865600586" text="Name" />
+            <TableColumn fx:id="TypeColumn" prefWidth="171.2000732421875" text="Type" />
+            <TableColumn fx:id="PriceColumn" prefWidth="151.19992065429688" text="Price" />
+            <TableColumn fx:id="StockColumn" prefWidth="68.79998779296875" text="Qty" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchstock" layoutX="67.0" layoutY="37.0" />
+      <Button fx:id="SearchButton" layoutX="222.0" layoutY="37.0" mnemonicParsing="false" onAction="#Search" text="Search" />
+      <Text layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Button fx:id="EditButton" layoutX="423.0" layoutY="409.0" mnemonicParsing="false" onAction="#Edit" prefHeight="25.0" prefWidth="50.0" text="Edit" />
+      <Button fx:id="InsertButton" layoutX="488.0" layoutY="409.0" mnemonicParsing="false" onAction="#Insert" prefHeight="25.0" prefWidth="50.0" text="Insert" />
+      <Button fx:id="DeleteButton" layoutX="552.0" layoutY="409.0" mnemonicParsing="false" onAction="#Delete" prefHeight="25.0" prefWidth="50.0" text="Delete" />
+      <Button fx:id="BackButton" layoutX="25.0" layoutY="409.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="Back" />
+      <Button fx:id="UpdateButton" layoutX="355.0" layoutY="409.0" mnemonicParsing="false" onAction="#loadStockData" text="Refresh" />
+   </children>
+</AnchorPane>

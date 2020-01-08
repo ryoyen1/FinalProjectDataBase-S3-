@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="364.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Stock.EditStockController">
+   <children>
+      <TextField fx:id="ItemName" layoutX="106.0" layoutY="67.0" prefHeight="25.0" prefWidth="191.0" />
+      <Text layoutX="24.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Name        :" wrappingWidth="61.78124999999994" />
+      <Text layoutX="24.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price          :" wrappingWidth="62.96484374999994" />
+      <TextField fx:id="ItemPrice" layoutX="106.0" layoutY="121.0" prefHeight="25.0" prefWidth="191.0" />
+      <Text layoutX="24.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock         :" wrappingWidth="62.96484374999994" />
+      <TextField fx:id="ItemStock" layoutX="106.0" layoutY="169.0" prefHeight="25.0" prefWidth="191.0" />
+      <Button fx:id="cancelButton" layoutX="131.0" layoutY="273.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="25.0" prefWidth="63.0" text="Cancel" />
+      <Button fx:id="SaveButton" layoutX="131.0" layoutY="227.0" mnemonicParsing="false" onAction="#Save" prefHeight="25.0" prefWidth="63.0" text="Save" />
+   </children>
+</AnchorPane>
